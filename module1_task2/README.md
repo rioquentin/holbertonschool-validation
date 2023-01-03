@@ -8,7 +8,8 @@
     > Css
     > Html
 
-* Lifecycle
+## Lifecycle
+* Different Method:
 
     > help
     > clean
