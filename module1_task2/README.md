@@ -3,20 +3,11 @@
 ## Prerequisites
 *   Different languages:
 
-    > Toml
-    > iGo hugo
-    > Css
-    > Html
+    > GNU Make in version 3.81+
+    > Git (command line) in version 2+
+    > Go Hugo v0.80+
 
 ## Lifecycle
-* Different Method:
-
-    > help
-    > clean
-    > build
-    > post
-
-## Command
 * Different Make:
     > help : Show help command
     > build:  Create Website
