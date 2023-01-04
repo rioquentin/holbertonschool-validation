@@ -9,7 +9,7 @@
 
 ## Lifecycle
 * Different Make:
-    > help : Show help command
+    > help: Show help command
     > build:  Create Website
     > clean:  Delete content of dist folder
     > post:  Create a post

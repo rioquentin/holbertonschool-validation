@@ -1,4 +1,4 @@
-help : ## Show help command
+help: ## Show help command
 	@sed -ne '/@sed/!s/## //p' Makefile
 
 build:  ## Create Website
