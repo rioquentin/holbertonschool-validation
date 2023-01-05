@@ -6,5 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: git clone https://github.com/MathysWaelter/holbertonschool-validation.git
-      - run: cd module1_task4
+      - run: cd holbertonschool-validation/module1_task4
       - run: make help
