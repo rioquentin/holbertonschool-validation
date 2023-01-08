@@ -2,8 +2,8 @@
 name: module3_task0
 on:  # yamllint disable-line rule:truthy
   push:
-    branches:
-      - main
+    paths:
+      - 'module3_task0/**'
   schedule:
     - cron: '0 0 * * *'
 
