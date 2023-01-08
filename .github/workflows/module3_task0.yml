@@ -4,6 +4,8 @@ on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - main
+    paths:
+      - 'module"_task0/**'
   schedule:
     - cron: '0 0 * * *'
 
