@@ -1,5 +1,5 @@
 ---
-name: module3_task0
+name: module3_task1
 on:  # yamllint disable-line rule:truthy
   push:
     branches:
@@ -9,10 +9,13 @@ on:  # yamllint disable-line rule:truthy
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - run: |
-          cd module3_task0/
-          make help
+          cd module3_task1/
+          ./setup.sh
+      - run: |
+          cd module3_task1/
+          make build
