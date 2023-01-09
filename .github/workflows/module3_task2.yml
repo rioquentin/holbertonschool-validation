@@ -16,13 +16,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
       - name: install hugo
         run: |
           cd module3_task2 && ./setup.sh
       - name: Validate Makefile help
         run: |
           cd module3_task2
+          npm install markdownlint
           make build
-        run: |
-          cd module3_task2
           make package
+          unit-tests:
+          integration-tests:
+          validation-tests:
