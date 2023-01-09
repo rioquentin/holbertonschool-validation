@@ -6,7 +6,6 @@ name: module3_task2
       - main
   schedule:
     - cron: '0 0 * * *'
-  tags: "1.0.0"
 
 permissions: read-all
 
@@ -20,8 +19,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: Release
-        uses: softprops/action-gh-release@v1
       - name: install hugo
         run: |
           cd module3_task3 && ./setup.sh

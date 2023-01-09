@@ -20,6 +20,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - name: Release
+        uses: softprops/action-gh-release@v1
       - name: install hugo
         run: |
           cd module3_task3 && ./setup.sh
