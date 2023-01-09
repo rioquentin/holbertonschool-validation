@@ -44,3 +44,4 @@ jobs:
           make unit-tests
           make integration-tests
           make validate
+      - run: gh release create v1.0.0
