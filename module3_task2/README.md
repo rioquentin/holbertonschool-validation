@@ -14,3 +14,6 @@
     > clean:  Delete content of dist folder
     > post:  Create a post
     > package: Zip website
+    > unit-tests: test for file
+    > integration-tests: integr file
+    > validation: validate file
