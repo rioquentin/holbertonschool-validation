@@ -26,6 +26,6 @@ jobs:
           npm install markdownlint
           make build
           make package
-          unit-tests:
-          integration-tests:
-          validation-tests:
+          make unit-tests:
+          make integration-tests:
+          make validation-tests:
