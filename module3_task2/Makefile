@@ -16,7 +16,8 @@ package: ## zip website
 	@zip awesome-website.zip ./dist
 
 lint: ## lint with markdown
-	@markdownlint README.md DEPLOY.md
+	@markdownlint README.md
+	@markdownlint DEPLOY.md
 
 unit-tests: ## test file
 	@ls
