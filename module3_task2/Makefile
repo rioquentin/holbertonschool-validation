@@ -25,5 +25,5 @@ unit-tests: ## test file
 integration-tests: ## integrate file
 	@ls
 
-validation: ## valide file
+validate: ## valide file
 	@ls

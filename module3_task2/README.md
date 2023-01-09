@@ -21,4 +21,4 @@
     > package: Zip website
     > unit-tests: test for file
     > integration-tests: integr file
-    > validation: validate file
+    > validate: validate file
