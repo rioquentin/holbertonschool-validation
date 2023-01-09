@@ -47,4 +47,4 @@ jobs:
       - gh:
           env:
             GH_TOKEN: ${{ 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 }}
-        run: gh release create v1.0.0
+        run: release create v1.0.0
