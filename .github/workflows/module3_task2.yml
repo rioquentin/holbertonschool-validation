@@ -23,7 +23,7 @@ jobs:
       - name: Validate Makefile help
         run: |
           cd module3_task2
-          npm install markdownlint
+          npm install markdownlint --save-dev
           make lint
           make build
           make package
