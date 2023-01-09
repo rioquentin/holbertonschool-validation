@@ -14,11 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: setup
-      - run: |
+        run: |
           cd module3_task1
           ./setup.sh
       - name: build
-      - run: |
+        run: |
           cd module3_task1
           make build
         working-directory: module3_task1
