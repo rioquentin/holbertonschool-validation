@@ -17,11 +17,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: install hugo
-        run: .github/scripts/setup.sh
+        run: |
+          cd module3_task1 && ./setup.sh
       - name: Validate Makefile help
         run: |
+          cd module3_task1
           make help
           make build
           make clean
           make POST_NAME=who-are-we POST_TITLE="Who are we" post
-        working-directory: module3_task1
