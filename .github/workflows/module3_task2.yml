@@ -33,4 +33,4 @@ jobs:
           make package
           make unit-tests
           make integration-tests
-          make validation
+          make validate
