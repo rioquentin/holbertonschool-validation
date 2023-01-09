@@ -21,3 +21,4 @@ jobs:
       - run: |
           cd module3_task1
           make build
+        working-directory: module3_task1
