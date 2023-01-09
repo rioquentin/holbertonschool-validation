@@ -24,8 +24,9 @@ jobs:
         run: |
           cd module3_task2
           npm install markdownlint
+          make lint
           make build
           make package
-          make unit-tests:
-          make integration-tests:
-          make validation-tests:
+          make unit-tests
+          make integration-tests
+          make validation-tests
