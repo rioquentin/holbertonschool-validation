@@ -4,11 +4,11 @@ env:
 name: module3_task4
 "on":
   push:
+    tags: "1.0.1"
+    branches:
+      - main
     pull_request:
       types: [pull, opened, reopened, synchronize]
-  tags: "1.0.1"
-  branches:
-    - main
   schedule:
     - cron: '0 0 * * *'
 
