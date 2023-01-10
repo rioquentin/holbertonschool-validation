@@ -50,5 +50,5 @@ jobs:
             What are the commands to start and stop the application? tag
             How to customize where the application logs are written?
             How to verify that the application is running (healthcheck)?
-      - run: gh release create v1.0.0 --title "v1.0.1" \
+      - run: gh release create v1.0.1 --title "v1.0.1" \
           --notes DEPLOY.md 2>/dev/null || echo "OK"
