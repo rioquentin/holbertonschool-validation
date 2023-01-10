@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-node@v3
       - name: Installing markdownlint
         run: npm install -g markdownlint-cli
-      - name: Building the archive for production
+      - name: Building the archivefor production
         run: |
           cd module3_task3
           make lint
