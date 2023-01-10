@@ -8,7 +8,7 @@ name: module3_task4
     branches:
       - main
     pull_request:
-      types: [pull, opened, reopened, synchronize]
+      types: [opened, reopened, synchronize]
   schedule:
     - cron: '0 0 * * *'
 
