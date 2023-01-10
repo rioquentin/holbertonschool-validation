@@ -31,6 +31,7 @@ jobs:
           bodypath: |
             module3_task3
             DEPLOY.md
+        - run: gh release create 1.0.0 --title "1.0.0" --notes DEPLOY.md >/dev/null 2>&1 && echo OK
 
       - name: install hugo
         run: |
