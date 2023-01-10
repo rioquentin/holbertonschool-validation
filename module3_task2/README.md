@@ -20,5 +20,5 @@
     > post:  Create a post
     > package: Zip website
     > unit-tests: test for file
-    > integration-tests: integr file
+    > integration-tests: integrate file
     > validate: validate file

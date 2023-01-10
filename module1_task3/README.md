@@ -12,4 +12,4 @@
     > help: Show help command
     > build:  Create Website
     > clean:  Delete content of dist folder
-    > post:  Create a post
+    > post:  Create a posts
