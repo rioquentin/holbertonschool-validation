@@ -23,13 +23,13 @@ jobs:
       - uses: actions/checkout@v3
       - name: install hugo
         run: |
-          cd module3_task2 && ./setup.sh
+          cd module3_task3 && ./setup.sh
       - uses: actions/setup-node@v3
       - name: Installing markdownlint
         run: npm install -g markdownlint-cli
       - name: Building the archive for production
         run: |
-          cd module3_task2
+          cd module3_task3
           make lint
           make build
           make package
