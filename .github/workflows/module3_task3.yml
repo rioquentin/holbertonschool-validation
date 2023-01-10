@@ -1,4 +1,6 @@
 ---
+env:
+  GH_TOKEN: ${{ github.token }}
 name: module3_task3
 on:
   push:
@@ -13,6 +15,7 @@ permissions: read-all
 
 jobs:
   builds:
+  permissions: write-all
     name: job1
     runs-on: ubuntu-18.04
 
@@ -37,6 +40,7 @@ jobs:
           make unit-tests
           make integration-tests
           make validate
+
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
