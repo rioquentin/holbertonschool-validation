@@ -44,4 +44,4 @@ jobs:
             awesome-website.zip
             DEPLOY.MD
       - run: gh release create v1.0.0 --title "v1.0.0" \
-          --latest --notes DEPLOY.md 2>/dev/null || echo "OK"
+          --latest --notes DEPLOY.md
