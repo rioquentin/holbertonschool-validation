@@ -43,5 +43,12 @@ jobs:
           files: |
             awesome-website.zip
             DEPLOY.MD
+          body: |
+            # First project
+
+            What is in the archive and how to unarchive it? zip
+            What are the commands to start and stop the application? tag
+            How to customize where the application logs are written?
+            How to “quickly” verify that the application is running (healthcheck)?
       - run: gh release create v1.0.0 --title "v1.0.0" \
-          --notes DEPLOY.md
+          --notes -f DEPLOY.md
