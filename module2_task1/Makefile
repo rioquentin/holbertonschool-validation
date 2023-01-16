@@ -4,8 +4,9 @@ help: ## Show help command
 lint: ## Linter
 	@golangci-lint run
 
-build: lint ## Build and check if the linter does not return any error
-	@go build
+build: ## Build and check if the linter does not return any error
+	@golangci-lint run && go build
+	
 
 run: ## Run the server
 	@./awesome-api >./awesome.log 2>&1 &
