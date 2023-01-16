@@ -14,6 +14,7 @@
 
 * Different Make:
 
+    > help: Show all command
     > build:  Create Website
     > clean:  Delete content of dist folder
     > run: Rune the website
