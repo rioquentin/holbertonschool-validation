@@ -1,8 +1,8 @@
-help: ## Show help command
-	@sed -ne '/@sed/!s/## //p' Makefile
-
 lint: ## Linter
 	@golangci-lint run
+
+help: ## Show help command
+	@sed -ne '/@sed/!s/## //p' Makefile
 
 build: ## Build and check if the linter does not return any error
 	@golangci-lint run && go build
