@@ -1,3 +1,6 @@
+help: ## Show help command
+	@sed -ne '/@sed/!s/## //p' Makefile
+
 build: ## Build a webserver
 	@go build
 
