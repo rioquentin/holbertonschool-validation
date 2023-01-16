@@ -1,15 +1,16 @@
 build:
-	@go build -o awesome-api
+	@go build
 
 run:
 	@./awesome-api >./awesome.log 2>&1 &
 
 stop:
-	@killall awesome-api
+	@pkill awesome-api
 
 clean:
 	@rm awesome-api
 	@rm awesome.log
+	@pkill awesome-api
 
 test:
 	curl http://localhost:9999
