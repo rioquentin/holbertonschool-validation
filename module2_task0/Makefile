@@ -5,7 +5,7 @@ run:
 	@./awesome-api >./awesome.log 2>&1 &
 
 stop:
-	@pkill -f "awesome-api"
+	@killall awesome-api
 
 clean:
 	@rm awesome-api
