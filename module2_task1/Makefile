@@ -2,10 +2,10 @@
 help: ## Show help command
 	@sed -ne '/@sed/!s/## //p' Makefile
 
-lint:
+lint: ## Linter
 	golangci-lint run
 
-build: lint
+build: lint ## Builder
 	@if [ $$? -eq 0 ]; then \
 		go build; \
 	else \
