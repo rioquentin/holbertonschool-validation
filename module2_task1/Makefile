@@ -1,11 +1,17 @@
-lint: ## Linter
-	@golangci-lint run || exit 1
 
 help: ## Show help command
 	@sed -ne '/@sed/!s/## //p' Makefile
 
-build: lint## Build and check if the linter does not return any error
-	@go build
+lint:
+	golangci-lint run
+
+build: lint
+	@if [ $$? -eq 0 ]; then \
+		go build; \
+	else \
+		exit 1; \
+	fi
+
 	
 
 run: ## Run the server
